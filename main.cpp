@@ -1,4 +1,4 @@
-/*, .Project 2
+/*  Project 2
     Name: Stephany Murillo Munoz and Andrewdai Truong
     Algorithm 1: Trick-or-Treat House Wait Times
     Class: CPSC-335-06
@@ -8,7 +8,7 @@
 using namespace std;
 
 // function prototypes
-void displaywHouses(int wHouses[], int numHouses);
+void displayArr(int arr[], int numElements);
 void moreCandy(int hCandies[], int wHouses[], int numHouses);
 void displayhCandies(int houseCandies[], int numHouses);
 
@@ -39,21 +39,12 @@ int main()
 	return 0;
 }
 
+// displayhCandies displays houseCandies array
 void displayhCandies(int houseCandies[], int numHouses)
 {
 	// display houseCandies array
 	cout << "houseCandies = [";
-	for (int i = 0; i < numHouses; i++)
-	{
-		if (i == numHouses - 1)
-		{
-			cout << houseCandies[i];	
-		}
-		else
-		{
-			cout << houseCandies[i] << ", ";
-		}
-	}
+	displayArr(houseCandies, numHouses);
 	cout << "]\n";
 }
 
@@ -75,24 +66,26 @@ void moreCandy(int houseCandies[], int waitHouses[], int numHouses)
 			}	
 		}
 	}
-	// call function to display waitHouses
-	displaywHouses(waitHouses, numHouses);
+
+	// display waitHouses array
+	cout << "waitHouses = [";
+	displayArr(waitHouses, numHouses);
+	cout << "]\n\n";
 }
 
-void displaywHouses(int wHouses[], int numHouses)
+// displayArr displays arrays
+void displayArr(int arr[], int numElements)
 {
-	cout << "waitHouses = [";
-	for (int i = 0; i < numHouses; i++)
+	for (int i = 0; i < numElements; i++)
 	{
-		if (i == numHouses - 1)
+		if (i == numElements - 1)
 		{
-			cout << wHouses[i];	
+			cout << arr[i];	
 		}
 		else
 		{
-			cout << wHouses[i] << ", ";
+			cout << arr[i] << ", ";
 		}
 	}
-	cout << "]\n\n";
 }
 
