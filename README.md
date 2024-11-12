@@ -1,6 +1,5 @@
 /*  Project 2
     Name: Stephany Murillo Munoz and Andrewdai Truong
-    Algorithm 1: Trick-or-Treat House Wait Times
     Class: CPSC-335-06
 -------------------------------------------------------*/
 
